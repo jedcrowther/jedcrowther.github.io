@@ -159,7 +159,7 @@ a {
       top: 0; } }
 
 .header__background-image {
-  background: url("../assets/images/header.jpg");
+  background: url("../assets/images/header_low.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
