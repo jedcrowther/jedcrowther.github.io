@@ -12,6 +12,13 @@
         margin-top: $row*6;
         margin-bottom: $row*6;
 
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            font-size: 42px;
+            max-width: 640px;
+
+        }
+
         @media screen and (max-width: 1024px) {
             max-width: 480px;
             margin-top: 308px;
@@ -22,6 +29,10 @@
             font-size: 32px;
             max-width: 360px;
             margin-bottom: $row*2;
+        }
+        @media screen and (max-width: 400px) {
+            font-size: 28px;
+            margin-top: 300px;
         }
     }
     &__background {
@@ -49,12 +60,28 @@
         height: 100%;
         background-position: center bottom;
     }
-    &__me-image {
+    &__me {
         position: absolute;
-        top: 280px;
-        left: 61%;
-        height: $row*14;
+        top: -50px;
+        width: 300px;
+        right: 0px;
+        img {
+            width: 100%;
+        }
+        @media screen and (min-width: 1250px) {
+            width: 380px;
+        }
+        @media screen and (max-width: 850px) {
+            display: none;
+        }
     }
+
+    // &__me-image {
+    //     position: absolute;
+    //     top: 280px;
+    //     left: 61%;
+    //     height: $row*14;
+    // }
 
     &__cross {
         .homepage & {display:none;}
