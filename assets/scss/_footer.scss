@@ -1,0 +1,36 @@
+@import "grid";
+
+.footer {
+    margin-top: $row*2;
+    margin-bottom: $row*2;
+    cursor: default;
+
+    @media screen and (min-width: 680px) {
+        margin-top: $row*4;
+    }
+
+    &__arrow {
+        position: fixed;
+        // bottom: 166px;
+        bottom: $row*2;
+        right: 10%;
+        cursor: pointer;
+    }
+
+    &__icon {
+        color: $black;
+        padding-right: 16px;
+        font-size: 22px;
+        transition: 0.3s;
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &__copyright {
+        margin-top: $row;
+        font-size:16px;
+        color: $darkgrey;
+        font-weight: lighter;
+    }
+}
