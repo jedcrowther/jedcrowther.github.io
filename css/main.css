@@ -1,5 +1,35 @@
+@font-face {
+  font-family: 'GT Walsheim';
+  src: url("GTWalsheim-Bold.woff2") format("woff2"), url("GTWalsheim-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GT Walsheim';
+  src: url("GTWalsheim-BoldOblique.woff2") format("woff2"), url("GTWalsheim-BoldOblique.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GT Walsheim';
+  src: url("GTWalsheim-Medium.woff2") format("woff2"), url("GTWalsheim-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GT Walsheim';
+  src: url("GTWalsheim-RegularOblique.woff2") format("woff2"), url("GTWalsheim-RegularOblique.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GT Walsheim';
+  src: url("GTWalsheim.woff2") format("woff2"), url("GTWalsheim.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
-  font-family: "GT Walsheim"; }
+  font-family: "GT Walsheim", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 h1 {
   font-size: 48px;
