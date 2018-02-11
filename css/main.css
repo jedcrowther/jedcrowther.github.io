@@ -162,7 +162,7 @@ a {
 .header__blurb {
   max-width: 740px;
   margin-top: 288px;
-  margin-bottom: 288px; }
+  margin-bottom: 240px; }
   @media screen and (min-width: 1024px) and (max-width: 1200px) {
     .header__blurb {
       font-size: 42px;
@@ -170,17 +170,18 @@ a {
   @media screen and (max-width: 1024px) {
     .header__blurb {
       max-width: 480px;
-      margin-top: 308px;
       font-size: 38px; } }
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 700px) {
     .header__blurb {
       font-size: 32px;
       max-width: 360px;
-      margin-bottom: 96px; } }
-  @media screen and (max-width: 400px) {
+      margin-bottom: 192px;
+      margin-top: 380px; } }
+  @media screen and (max-width: 500px) {
     .header__blurb {
-      font-size: 28px;
-      margin-top: 300px; } }
+      margin-top: 280px;
+      margin-bottom: 192px;
+      font-size: 28px; } }
 
 .header__background {
   position: absolute;
@@ -200,11 +201,14 @@ a {
       top: 0; } }
 
 .header__background-image {
-  background: url("../assets/images/header_low.jpg");
+  background: url("../assets/images/white-low.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  background-position: center bottom; }
+  background-position: center 80%; }
+  @media screen and (min-width: 1324px) {
+    .header__background-image {
+      background-position: center; } }
 
 .header__me {
   position: absolute;
@@ -287,6 +291,39 @@ a {
   transition: 0.3s;
   display: inline-block; }
 
+.bio__container {
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 680px) {
+    .bio__container {
+      flex-direction: column;
+      margin-top: 48px; } }
+
+.bio__image, .bio__about, .bio__contact {
+  width: 30%; }
+  @media screen and (max-width: 680px) {
+    .bio__image, .bio__about, .bio__contact {
+      width: 100%; } }
+  .bio__image img, .bio__about img, .bio__contact img {
+    width: 100%; }
+
+.bio__about p {
+  font-size: 16px; }
+
+@media screen and (max-width: 680px) {
+  .bio__about {
+    margin: 48px 0; } }
+
+.bio__header {
+  font-size: 21px; }
+
+.bio__links {
+  display: block;
+  padding: 6px 0; }
+
 ::selection {
   background: #3087f1;
   color: #e1e6e7; }
+
+body {
+  background-color: #fcfdfd; }
