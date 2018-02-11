@@ -1,6 +1,9 @@
 .header {
     &-intro__container {
     }
+    &__logo {
+        height: 19px;
+    }
     &__logo-container {
         margin-top: $row;
     }

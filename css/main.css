@@ -153,6 +153,9 @@ a {
     .project__next-entry h2:hover {
       color: #3087f1; }
 
+.header__logo {
+  height: 19px; }
+
 .header__logo-container {
   margin-top: 48px; }
 
