@@ -221,17 +221,16 @@ a {
     .header__background-image {
       background-position: center; } }
 
-.header__cross {
-  visibility: hidden; }
-  .homepage .header__cross {
-    display: none; }
-  .caseStudies .header__cross {
-    position: relative;
-    top: -22px;
-    left: 97%; }
-    .caseStudies .header__cross img {
-      width: 18px;
-      height: 18px; }
+.homepage .header__cross {
+  display: none; }
+
+.caseStudies .header__cross {
+  position: relative;
+  top: -22px;
+  left: 97%; }
+  .caseStudies .header__cross img {
+    width: 18px;
+    height: 18px; }
 
 @media screen and (min-width: 680px) {
   .case__container {

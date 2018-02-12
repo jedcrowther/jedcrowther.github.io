@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
+    <title>Group 3</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Case-Study" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-        <g id="Desktop" transform="translate(-1151.000000, -74.000000)" stroke="#010101" stroke-width="3">
-            <g id="Group" transform="translate(1153.000000, 75.000000)">
-                <path d="M19.6166522,0.753219015 L0.383347776,19.246781" id="Line"></path>
-                <path d="M0.500505063,1.02518316 L19.7338095,19.5187451" id="Line"></path>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Desktop" transform="translate(-1134.000000, -2884.000000)" stroke="#010101" stroke-width="2.1">
+            <g id="Group-3" transform="translate(1130.000000, 2880.000000)">
+                <g id="Group-2" transform="translate(10.142136, 10.727922) rotate(-45.000000) translate(-10.142136, -10.727922) translate(3.142136, 3.727922)">
+                    <path d="M7,14 L7,-4.54747351e-13" id="Line"></path>
+                    <path d="M14,7 L8.8817842e-16,7" id="Line"></path>
+                </g>
             </g>
         </g>
     </g>
