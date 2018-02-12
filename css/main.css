@@ -80,6 +80,14 @@ a {
   a:hover {
     color: #3087f1; }
 
+.bio__links,
+.project__link {
+  text-decoration: none;
+  border-bottom: 1px solid #3087f1;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 8px; }
+
 #container, .header__container {
   max-width: 1200px;
   margin: 0 auto;
@@ -95,7 +103,7 @@ a {
   .footer__arrow {
     position: fixed;
     bottom: 96px;
-    right: 10%;
+    left: 89%;
     cursor: pointer; }
   .footer__icon {
     color: #22292f;
@@ -161,8 +169,10 @@ a {
 
 .header__blurb {
   max-width: 740px;
-  margin-top: 288px;
+  margin-top: 35vh;
   margin-bottom: 240px; }
+  .header__blurb span {
+    font-weight: 500; }
   @media screen and (min-width: 1024px) and (max-width: 1200px) {
     .header__blurb {
       font-size: 42px;
@@ -175,11 +185,9 @@ a {
     .header__blurb {
       font-size: 32px;
       max-width: 360px;
-      margin-bottom: 192px;
-      margin-top: 380px; } }
+      margin-bottom: 192px; } }
   @media screen and (max-width: 500px) {
     .header__blurb {
-      margin-top: 280px;
       margin-bottom: 192px;
       font-size: 28px; } }
 
@@ -210,49 +218,16 @@ a {
     .header__background-image {
       background-position: center; } }
 
-.header__me {
-  position: absolute;
-  top: -50px;
-  width: 300px;
-  right: 0px; }
-  .header__me img {
-    width: 100%; }
-  @media screen and (min-width: 1250px) {
-    .header__me {
-      width: 380px; } }
-  @media screen and (max-width: 850px) {
-    .header__me {
-      display: none; } }
-
 .homepage .header__cross {
   display: none; }
 
 .caseStudies .header__cross {
   position: relative;
   top: -22px;
-  left: 98%; }
+  left: 97%; }
   .caseStudies .header__cross img {
     width: 18px;
     height: 18px; }
-
-.links {
-  text-decoration: none;
-  margin-right: 48px;
-  font-size: 25px;
-  font-weight: normal; }
-  @media screen and (max-width: 520px) {
-    .links {
-      margin: 6px 0;
-      font-size: 20px;
-      font-weight: normal;
-      display: inline-block; } }
-  .links__container {
-    margin-bottom: 144px; }
-    @media screen and (max-width: 520px) {
-      .links__container {
-        margin-bottom: 48px; } }
-  .links__icon {
-    padding-right: 18px; }
 
 @media screen and (min-width: 680px) {
   .case__container {
@@ -316,13 +291,6 @@ a {
 
 .bio__header {
   font-size: 21px; }
-
-.bio__links {
-  text-decoration: none;
-  border-bottom: 1px solid #3087f1;
-  display: inline-block;
-  text-decoration: none;
-  margin-bottom: 8px; }
 
 ::selection {
   background: #3087f1;

@@ -97,3 +97,12 @@ a {
         color: $blue;
     }
 }
+
+.bio__links,
+.project__link {
+    text-decoration: none;
+    border-bottom: 1px solid $blue;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 8px;
+}

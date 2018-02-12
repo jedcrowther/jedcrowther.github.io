@@ -1,28 +1,4 @@
 $row: 48px;
-.links {
-    text-decoration: none;
-    margin-right: $row;
-    font-size: 25px;
-    font-weight: normal;
-
-    @media screen and (max-width: 520px) {
-        margin: 6px 0;
-        font-size: 20px;
-        font-weight: normal;
-        display: inline-block;
-    }
-
-    &__container {
-        margin-bottom: $row*3;
-
-        @media screen and (max-width: 520px) {
-            margin-bottom: $row;
-        }
-    }
-    &__icon {
-        padding-right: 18px;        
-    }
-}
 .case {
     &__container {
         @media screen and (min-width: 680px) {
@@ -106,12 +82,5 @@ $row: 48px;
     }
     &__header {
         font-size: 21px;
-    }
-    &__links {
-        text-decoration: none;
-        border-bottom: 1px solid $blue;
-        display: inline-block;
-        text-decoration: none;
-        margin-bottom: 8px;
     }
 }
