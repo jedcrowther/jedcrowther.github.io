@@ -104,7 +104,10 @@ a {
     position: fixed;
     bottom: 96px;
     left: 89%;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 200ms ease-out; }
+    .footer__arrow:hover {
+      transform: translateY(-6px); }
   .footer__icon {
     color: #22292f;
     padding-right: 16px;
@@ -218,16 +221,17 @@ a {
     .header__background-image {
       background-position: center; } }
 
-.homepage .header__cross {
-  display: none; }
-
-.caseStudies .header__cross {
-  position: relative;
-  top: -22px;
-  left: 97%; }
-  .caseStudies .header__cross img {
-    width: 18px;
-    height: 18px; }
+.header__cross {
+  visibility: hidden; }
+  .homepage .header__cross {
+    display: none; }
+  .caseStudies .header__cross {
+    position: relative;
+    top: -22px;
+    left: 97%; }
+    .caseStudies .header__cross img {
+      width: 18px;
+      height: 18px; }
 
 @media screen and (min-width: 680px) {
   .case__container {

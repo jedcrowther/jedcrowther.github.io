@@ -15,6 +15,10 @@
         bottom: $row*2;
         left: 89%;
         cursor: pointer;
+        transition: 200ms ease-out;
+        &:hover {
+            transform: translateY(-6px);
+        }
     }
 
     &__icon {

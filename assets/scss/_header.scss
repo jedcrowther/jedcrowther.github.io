@@ -64,6 +64,7 @@
         }
     }
     &__cross {
+        visibility: hidden;
         .homepage & {display:none;}
         .caseStudies & {
             position: relative;
