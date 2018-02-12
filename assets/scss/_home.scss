@@ -108,7 +108,10 @@ $row: 48px;
         font-size: 21px;
     }
     &__links {
-        display: block;
-        padding: 6px 0;
+        text-decoration: none;
+        border-bottom: 1px solid $blue;
+        display: inline-block;
+        text-decoration: none;
+        margin-bottom: 8px;
     }
 }
