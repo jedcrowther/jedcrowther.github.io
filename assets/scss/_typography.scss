@@ -38,6 +38,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('../assets/fonts/GTWalsheimLight.woff2') format('woff2'),
+        url('../assets/fonts/GTWalsheimLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
 
 
 @import "colours";
