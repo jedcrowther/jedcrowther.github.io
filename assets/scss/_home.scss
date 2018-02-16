@@ -26,6 +26,20 @@ $row: 48px;
         }
 
     }
+    &__overlay {
+        background-color: black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        &:hover {
+            //opacity: 1;
+        }
+    }
     &__image {
         width: 100%;
         transition: .6s ease;
@@ -35,7 +49,10 @@ $row: 48px;
         overflow: hidden;
 
         &:hover .case__image {
-            transform: scale(1.07) !important;
+             transform: scale(1.07) !important;
+        }
+        &:hover ~ .case__overlay {
+            // opacity: 1;
         }
         &:hover ~ .case__title {
             // color: $blue;
