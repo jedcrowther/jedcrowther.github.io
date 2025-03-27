@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
   <head>
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-92381519-2"
     ></script>
@@ -13,14 +13,15 @@
       gtag("js", new Date());
 
       gtag("config", "UA-92381519-2");
-    </script>
+    </script> -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="referrer" content="no-referrer" />
     <meta
       name="description"
       content="Jed Crowther | Web design and development portfolio | Christchurch, New Zealand"
     />
-    <title>Home | Jed Crowther</title>
+    <title>Jed Crowther | Front End Developer</title>
     <link rel="home" href="index.html" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link
@@ -35,7 +36,6 @@
 
     <style>
       /* Ensure elements load hidden before ScrollReveal runs */
-
       .fade,
       .reveal,
       .fade-delay {
@@ -56,20 +56,103 @@
   </header>
 
   <body>
-    <div id="container">
+    <main id="container">
       <div class="header__background fade">
         <div class="header__background-image"></div>
       </div>
-      <div class="header-intro__container fade-delay">
-        <h1 class="header__blurb">
-          <span>Hi, I’m Jed</span> — web developer, bicycle rider, enthusiastic
-          coder, snow lover &amp; quiet achiever.
-        </h1>
+      <section class="header-intro__container fade-delay">
+        <div>
+          <h1 class="header__blurb">
+            <span>Hi, I’m Jed</span>
+            <!-- web developer, bicycle rider, enthusiastic coder, snow lover
+          &amp; quiet achiever. -->
+            – a Front End Developer working remotely for
+            <a
+              href="https://www.batch.nz"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Batch</a
+            >
+            in Christchurch, New Zealand.
+          </h1>
+        </div>
         <!-- <div class="header__me"><img src="assets/images/me.png" alt=""></div> -->
-      </div>
+      </section>
 
-      <div class="case__container grid">
+      <section class="case__container grid">
         <div class="case__column">
+          <article class="case__wrapper reveal">
+            <a
+              class="case__link"
+              href="https://pegasus.health.nz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="case__image-container">
+                <img
+                  class="case__image"
+                  src="assets/images/cover/pegasus.jpg"
+                  alt="Pegasus Health"
+                />
+              </div>
+              <p class="case__title">Pegasus Health</p>
+            </a>
+          </article>
+          <article class="case__wrapper reveal">
+            <a
+              class="case__link"
+              href="https://opespartners.co.nz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="case__image-container">
+                <img
+                  class="case__image"
+                  src="assets/images/cover/opes.jpg"
+                  alt="Pegasus Health"
+                />
+              </div>
+              <p class="case__title">Opes Partners</p>
+            </a>
+          </article>
+        </div>
+        <div class="case__column">
+          <article class="case__wrapper reveal">
+            <a
+              class="case__link"
+              href="https://fitnessondemand247.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="case__image-container">
+                <img
+                  class="case__image"
+                  src="assets/images/cover/fod.jpg"
+                  alt="Fitness on Demand"
+                />
+              </div>
+              <p class="case__title">Fitness on Demand</p>
+            </a>
+          </article>
+          <article class="case__wrapper reveal">
+            <a
+              class="case__link"
+              href="https://thearts.co.nz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="case__image-container">
+                <img
+                  class="case__image"
+                  src="assets/images/cover/arts.jpg"
+                  alt="Arts Foundation"
+                />
+              </div>
+              <p class="case__title">Arts Foundation</p>
+            </a>
+          </article>
+        </div>
+        <!-- <div class="case__column">
           <article class="case__wrapper reveal">
             <a class="case__link" href="bruncher.html">
               <div class="case__image-container">
@@ -144,10 +227,10 @@
               <p class="case__title">Frontal Lobe</p>
             </a>
           </article>
-        </div>
-      </div>
+        </div> -->
+      </section>
 
-      <div class="bio__container">
+      <section class="bio__container">
         <div class="bio__image">
           <img
             src="assets/images/mugshot.jpg"
@@ -155,18 +238,21 @@
           />
         </div>
         <div class="bio__about">
-          <h4 class="bio__header">About</h4>
+          <h3 class="bio__header">About</h3>
           <p>
             I studied Fine Arts with a major in Graphic Design at the University
-            of Canterbury and more recently received a Diploma of Web
-            Development with Distinction from Yoobee School of Design.
+            of Canterbury and received a Diploma of Web Development with
+            Distinction from Yoobee School of Design.
             <br /><br />
-            I really enjoy designing things and watching them come to life
-            through the power of code.
+            I am passionate about building engaging, accessible user
+            experiences.
+            <!-- I really
+            enjoy designing things and watching them come to life through the
+            power of code. -->
           </p>
         </div>
         <div class="bio__contact">
-          <h4 class="bio__header">Contact</h4>
+          <h3 class="bio__header">Contact</h3>
           <a class="bio__links" href="mailto:jedlcrowther@gmail.com"
             >jedlcrowther@gmail.com</a
           ><br />
@@ -174,28 +260,37 @@
             >View CV &#8594;</a
           >
         </div>
-      </div>
+      </section>
 
       <footer id="footer" class="footer">
-        <div id="footer-scroll" class="footer__arrow">
+        <button id="footer-scroll" class="footer__arrow">
           <img
             src="assets/images/up-arrow.svg"
             alt="Click arrow icon to scroll to top."
           />
-        </div>
+        </button>
         <!-- <a href="https://dribbble.com/xj-nny" target="_blank"><i class="footer__icon fab fa-dribbble"></i></a> -->
-        <a href="https://github.com/xjnny" target="_blank"
+        <a
+          href="https://github.com/jedcrowther"
+          aria-label="Github"
+          target="_blank"
           ><i class="footer__icon fab fa-github"></i
         ></a>
-        <a href="https://www.linkedin.com/in/jedcrowther/" target="_blank"
+        <a
+          href="https://www.linkedin.com/in/jedcrowther/"
+          aria-label="LinkedIn"
+          target="_blank"
           ><i class="footer__icon fab fa-linkedin-in"></i
         ></a>
-        <a href="https://codepen.io/jedcrowther/" target="_blank"
+        <a
+          href="https://codepen.io/jedcrowther/"
+          aria-label="Codepen"
+          target="_blank"
           ><i class="footer__icon fab fa-codepen"></i
         ></a>
         <p class="footer__copyright">Copyright 2025 All rights reserved</p>
       </footer>
-    </div>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>

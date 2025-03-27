@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
   <head>
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-92381519-2"
     ></script>
@@ -13,14 +13,14 @@
       gtag("js", new Date());
 
       gtag("config", "UA-92381519-2");
-    </script>
+    </script> -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta
       name="description"
       content="Jed Crowther | Web design and development portfolio | Christchurch, New Zealand"
     />
-    <title>Frontal Lobe Case Study | Jed Crowther</title>
+    <title>Bruncher Case Study | Jed Crowther</title>
     <link rel="home" href="index.html" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link
@@ -35,7 +35,6 @@
 
     <style>
       /* Ensure elements load hidden before ScrollReveal runs */
-
       .fade,
       .reveal,
       .fade-delay {
@@ -45,7 +44,7 @@
   </head>
   <header id="header" class="header__container caseStudies fade">
     <div class="header__logo-container">
-      <a href="index.html">
+      <a href="index.html" aria-label="Home">
         <img
           class="header__logo"
           src="assets/images/logo.png"
@@ -54,66 +53,68 @@
       </a>
     </div>
 
-    <a href="index.html" class="header__cross"
-      ><img
-        src="assets/images/cross.svg"
-        alt="Small 'x' icon to cancel out of page"
-    /></a>
+    <a href="index.html" class="header__cross" aria-label="Return to Home"
+      ><img src="assets/images/cross.svg" alt="" />
+    </a>
   </header>
 
   <body>
-    <div id="container">
+    <main id="container">
       <article class="project__container">
-        <h1 class="project__title fade-delay">Frontal Lobe</h1>
-        <h4 class="project__subtitle fade-delay">Web Design</h4>
+        <h1 class="project__title fade-delay">Bruncher</h1>
+        <h3 class="project__subtitle fade-delay">
+          Google Maps API, UI, Materialize
+        </h3>
         <div class="reveal">
           <img
             class="project__image"
-            src="assets/images/frontallobe-1.jpg"
-            alt="Screenshot of the Frontal Lobe website"
+            src="assets/images/bruncher-2.jpg"
+            alt="Screenshot of the Bruncher App"
           />
           <p class="project__paragraph">
-            Frontal Lobe is an up and coming business who came to Big Boy
-            Websites for a website to showcase what they have to offer —
-            designing and building beautiful, sustainable designs using bamboo
-            and scrap wood.
+            In post-quake Christchurch, I often found myself spending far too
+            much of my time driving around the CBD hoping to find a cafe that
+            was open for Brunch. That’s why I created Bruncher.
           </p>
         </div>
         <div class="reveal">
           <img
             class="project__image"
-            src="assets/images/frontallobe-2.jpg"
-            alt="Screenshot of the Frontal Lobe website"
+            src="assets/images/bruncher-3.png"
+            alt="Screenshot of the Bruncher App"
           />
           <p class="project__paragraph">
-            The website was broken down into the different sections required —
-            information about the team, an online shop, contact information and
-            links to their social media. This information combined with
-            beautiful, high-quality imagery was able to convey the company
-            ethos.
+            When designing Bruncher it was important that the app gave real-time
+            information on nearby cafes, with open/close information, detailed
+            directions and was easy to use on mobile devices. Using the Google
+            Maps Javascript API in conjunction with the Materialise CSS
+            framework I was able to do all these things.
           </p>
         </div>
         <div class="reveal">
           <img
             class="project__image"
-            src="assets/images/frontallobe-3.jpg"
-            alt="Screenshot of the Frontal Lobe website"
+            src="assets/images/bruncher-mob.jpg"
+            alt="Screenshot of the Bruncher mobile App"
           />
           <p class="project__paragraph">
-            With the launch of the website, Frontal Lobe was able to make their
-            mark as a progressive, socially-minded business based on
-            sustainability and have an online outlet for their creations.
+            The app has an easy-to-use interface which allows users to locate
+            local cafes via geolocation or manual input and determine whether
+            they are open or closed. The app also offers the users detailed
+            directions and is responsive across a range of devices.
           </p>
         </div>
+        <!--
         <a
           class="project__link"
-          href="http://frontallobe.co.nz/"
+          href="http://jed.crowther.yoobee.net.nz/WE04/Brunch/public_html/home.html"
           target="_blank"
           >View Live Site &#8594;</a
         >
+        -->
         <p class="project__next-title">Next Project</p>
-        <a class="project__next-entry" href="bruncher.html">
-          <h2>Bruncher</h2>
+        <a class="project__next-entry" href="tpp.html">
+          <h2>The Perfect Pour</h2>
         </a>
       </article>
 
@@ -125,18 +126,27 @@
           />
         </div>
         <!-- <a href="https://dribbble.com/xj-nny" target="_blank"><i class="footer__icon fab fa-dribbble"></i></a> -->
-        <a href="https://github.com/xjnny" target="_blank"
+        <a
+          href="https://github.com/jedcrowther"
+          aria-label="Github"
+          target="_blank"
           ><i class="footer__icon fab fa-github"></i
         ></a>
-        <a href="https://www.linkedin.com/in/jedcrowther/" target="_blank"
+        <a
+          href="https://www.linkedin.com/in/jedcrowther/"
+          aria-label="LinkedIn"
+          target="_blank"
           ><i class="footer__icon fab fa-linkedin-in"></i
         ></a>
-        <a href="https://codepen.io/jedcrowther/" target="_blank"
+        <a
+          href="https://codepen.io/jedcrowther/"
+          aria-label="Codepen"
+          target="_blank"
           ><i class="footer__icon fab fa-codepen"></i
         ></a>
         <p class="footer__copyright">Copyright 2025 All rights reserved</p>
       </footer>
-    </div>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>

@@ -1,79 +1,80 @@
 .header {
-    &__logo {
-        height: 19px;
+  &__logo {
+    height: 19px;
+  }
+  &__logo-container {
+    margin-top: $row;
+  }
+  &__blurb {
+    max-width: 740px;
+    margin-top: 35vh;
+    margin-bottom: $row * 5;
+    span {
+      font-weight: 500;
     }
-    &__logo-container {
-        margin-top: $row;
+
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+      font-size: 42px;
+      max-width: 640px;
     }
-    &__blurb {
-        max-width: 740px;
-        margin-top: 35vh;
-        margin-bottom: $row*5;
-        span {
-            font-weight: 500;
-        }
 
-
-        @media screen and (min-width: 1024px) and (max-width: 1200px) {
-            font-size: 42px;
-            max-width: 640px;
-        }
-
-        @media screen and (max-width: 1024px) {
-            max-width: 480px;
-            font-size: 38px;
-        }
-
-        @media screen and (max-width: 700px) {
-            font-size: 32px;
-            max-width: 360px;
-            margin-bottom: $row*4;     
-        }
-
-        @media screen and (max-width: 500px) {
-            margin-bottom: $row*4;
-            font-size: 28px;
-        }
+    @media screen and (max-width: 1024px) {
+      max-width: 480px;
+      font-size: 38px;
     }
-    &__background {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 80%;
-        height: 98vh;
-        max-height: 750px;
-        z-index: -1;
-        overflow: hidden;
 
-        @media screen and (min-width: 1750px) {
-            width: 70vw;
-        }
-        @media screen and (max-width: 520px) {
-            width: 100vw;
-            top: 0;
-        }
+    @media screen and (max-width: 700px) {
+      font-size: 32px;
+      max-width: 360px;
+      margin-bottom: $row * 4;
     }
-    &__background-image {
-        background: url("../assets/images/white-low.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-        background-position: center 80%;
-        @media screen and (min-width: 1324px) {
-            background-position: center;
-        }
+
+    @media screen and (max-width: 500px) {
+      margin-bottom: $row * 4;
+      font-size: 28px;
     }
-    &__cross {
-        // visibility: hidden;
-        .homepage & {display:none;}
-        .caseStudies & {
-            position: relative;
-            top: -22px;
-            left: 97%;
-            img {
-                width: 18px;
-                height: 18px;
-            }
-        }
+  }
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 98vh;
+    max-height: 750px;
+    z-index: -1;
+    overflow: hidden;
+
+    @media screen and (min-width: 1750px) {
+      width: 70vw;
     }
+    @media screen and (max-width: 520px) {
+      width: 100vw;
+      top: 0;
+    }
+  }
+  &__background-image {
+    background: url("../assets/images/white-low.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center 80%;
+    @media screen and (min-width: 1324px) {
+      background-position: center;
+    }
+  }
+  &__cross {
+    // visibility: hidden;
+    .homepage & {
+      display: none;
+    }
+    .caseStudies & {
+      position: relative;
+      top: -22px;
+      left: 97%;
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
 }
